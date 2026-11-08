@@ -1,0 +1,105 @@
+{
+  "experiment": "003_256bit_recovery",
+  "modulus_bits": 256,
+  "prime_bits": [
+    128,
+    128
+  ],
+  "N": "107079096659010335968197182470848746895763199716996570694750055304471491264227",
+  "p": "328170823624898168899115982401181531673",
+  "q": "326290727116565929641752469038643678299",
+  "beta": 0.5,
+  "theoretical_N_quarter": "18089483826572197993",
+  "trials": [
+    {
+      "unknown_bits": 16,
+      "X": "65536",
+      "actual_suffix": "15897",
+      "success": true,
+      "elapsed_seconds": 0.30510324996430427,
+      "candidate_count": 1,
+      "error": null
+    },
+    {
+      "unknown_bits": 32,
+      "X": "4294967296",
+      "actual_suffix": "231423513",
+      "success": true,
+      "elapsed_seconds": 0.04026537499157712,
+      "candidate_count": 1,
+      "error": null
+    },
+    {
+      "unknown_bits": 48,
+      "X": "281474976710656",
+      "actual_suffix": "65266554453529",
+      "success": true,
+      "elapsed_seconds": 0.023794082982931286,
+      "candidate_count": 1,
+      "error": null
+    },
+    {
+      "unknown_bits": 56,
+      "X": "72057594037927936",
+      "actual_suffix": "67056311011589657",
+      "success": true,
+      "elapsed_seconds": 0.007559875026345253,
+      "candidate_count": 1,
+      "error": null
+    },
+    {
+      "unknown_bits": 60,
+      "X": "1152921504606846976",
+      "actual_suffix": "931747439466724889",
+      "success": true,
+      "elapsed_seconds": 0.005644374992698431,
+      "candidate_count": 1,
+      "error": null
+    },
+    {
+      "unknown_bits": 62,
+      "X": "4611686018427387904",
+      "actual_suffix": "931747439466724889",
+      "success": false,
+      "elapsed_seconds": 0.003668624965939671,
+      "candidate_count": 0,
+      "error": null
+    },
+    {
+      "unknown_bits": 64,
+      "X": "18446744073709551616",
+      "actual_suffix": "931747439466724889",
+      "success": false,
+      "elapsed_seconds": 0.0024163330090232193,
+      "candidate_count": 0,
+      "error": null
+    },
+    {
+      "unknown_bits": 66,
+      "X": "73786976294838206464",
+      "actual_suffix": "56271979660595379737",
+      "success": false,
+      "elapsed_seconds": 0.0022057919995859265,
+      "candidate_count": 0,
+      "error": null
+    },
+    {
+      "unknown_bits": 68,
+      "X": "295147905179352825856",
+      "actual_suffix": "56271979660595379737",
+      "success": false,
+      "elapsed_seconds": 0.004753041954245418,
+      "candidate_count": 0,
+      "error": null
+    },
+    {
+      "unknown_bits": 72,
+      "X": "4722366482869645213696",
+      "actual_suffix": "2712603126274770812441",
+      "success": false,
+      "elapsed_seconds": 0.005013582995161414,
+      "candidate_count": 0,
+      "error": null
+    }
+  ]
+}
