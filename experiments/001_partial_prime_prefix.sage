@@ -12,8 +12,8 @@ import json
 import time
 from pathlib import Path
 
-p = next_prime(2^31 + 12345)
-q = next_prime(2^31 + 98765)
+p = next_prime(2^31 + 98765)
+q = next_prime(2^31 + 12345)
 N = p * q
 
 unknown_bits = 8
@@ -43,7 +43,7 @@ result = {
     "unknown_low_bits": unknown_bits,
     "root_bound_X": int(X),
     "known_prefix": int(known_prefix),
-    "beta": 0.5,
+    "beta": float(0.5),
     "polynomial": "f(x) = x + known_prefix",
     "lattice_method": "SageMath Coppersmith small_roots (unknown divisor)",
     "elapsed_seconds": elapsed,
@@ -55,7 +55,7 @@ result = {
 
 out = Path("results/experiment_001.json")
 out.parent.mkdir(parents=True, exist_ok=True)
-out.write_text(json.dumps(result, indent=2) + "\n")
-print(json.dumps(result, indent=2))
+out.write_text(json.dumps(result, indent=2, default=int) + "\n")
+print(json.dumps(result, indent=2, default=int))
 if not success:
     raise SystemExit("Experiment did not recover the ground-truth factor; inspect Sage version/parameters.")

@@ -1,0 +1,26 @@
+{
+  "experiment": "001_partial_prime_prefix",
+  "description": "Toy RSA factor recovery from known high bits of one prime",
+  "N": 4611924781176557837,
+  "public_exponent": 65537,
+  "prime_bits": 32,
+  "unknown_low_bits": 8,
+  "root_bound_X": 256,
+  "known_prefix": 2147582208,
+  "beta": 0.5,
+  "polynomial": "f(x) = x + known_prefix",
+  "lattice_method": "SageMath Coppersmith small_roots (unknown divisor)",
+  "elapsed_seconds": 0.24971345800440758,
+  "candidates": [
+    {
+      "root": 253,
+      "factor": 2147582461
+    }
+  ],
+  "success": true,
+  "verification": "Every reported factor is checked by exact divisibility N % factor == 0",
+  "ground_truth_for_validation_only": {
+    "p": 2147582461,
+    "q": 2147496017
+  }
+}
