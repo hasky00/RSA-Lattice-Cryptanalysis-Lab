@@ -1,0 +1,122 @@
+{
+  "experiment": "002_recovery_boundary",
+  "description": "Toy RSA partial-prime recovery boundary",
+  "sage_method": "small_roots",
+  "beta": 0.5,
+  "N": 4611924781176557837,
+  "p_for_validation_only": 2147582461,
+  "q_for_validation_only": 2147496017,
+  "trials": [
+    {
+      "unknown_bits": 4,
+      "X": 16,
+      "known_prefix": 2147582448,
+      "elapsed_seconds": 0.2862116249743849,
+      "success": true,
+      "candidates": [
+        {
+          "root": 13,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 6,
+      "X": 64,
+      "known_prefix": 2147582400,
+      "elapsed_seconds": 0.0004663749714381993,
+      "success": true,
+      "candidates": [
+        {
+          "root": 61,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 8,
+      "X": 256,
+      "known_prefix": 2147582208,
+      "elapsed_seconds": 0.0006868329946883023,
+      "success": true,
+      "candidates": [
+        {
+          "root": 253,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 10,
+      "X": 1024,
+      "known_prefix": 2147581952,
+      "elapsed_seconds": 0.0003715829807333648,
+      "success": true,
+      "candidates": [
+        {
+          "root": 509,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 12,
+      "X": 4096,
+      "known_prefix": 2147581952,
+      "elapsed_seconds": 0.0002788329729810357,
+      "success": true,
+      "candidates": [
+        {
+          "root": 509,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 14,
+      "X": 16384,
+      "known_prefix": 2147581952,
+      "elapsed_seconds": 0.00026183301815763116,
+      "success": true,
+      "candidates": [
+        {
+          "root": 509,
+          "factor": 2147582461
+        }
+      ],
+      "error": null
+    },
+    {
+      "unknown_bits": 16,
+      "X": 65536,
+      "known_prefix": 2147549184,
+      "elapsed_seconds": 0.00018029101192951202,
+      "success": false,
+      "candidates": [],
+      "error": null
+    },
+    {
+      "unknown_bits": 18,
+      "X": 262144,
+      "known_prefix": 2147483648,
+      "elapsed_seconds": 0.00016904104268178344,
+      "success": false,
+      "candidates": [],
+      "error": null
+    },
+    {
+      "unknown_bits": 20,
+      "X": 1048576,
+      "known_prefix": 2147483648,
+      "elapsed_seconds": 0.00016529200365766883,
+      "success": false,
+      "candidates": [],
+      "error": null
+    }
+  ]
+}
